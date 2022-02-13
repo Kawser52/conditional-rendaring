@@ -4,12 +4,11 @@ import {useState} from 'react'
 import User from './component/User';
 
 function App() {
-  const [familiar, setFamiliar] = useState(false);
+  const [render, setRender] = useState(true);
   return (
     <div className="App">
-      <h2>Is Familiar: {familiar.toString()}</h2>
-      <button onClick={()=>setFamiliar(!familiar)}>Toggole Friend</button>
-      <User familiar={familiar}></User>
+      <h2>Is Familiar: {render.toString()}</h2>
+      <button onClick={()=>setRender(!render)}>Click Me</button>
     </div>
   );
 }
