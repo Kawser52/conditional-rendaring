@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <h2>Is Familiar: {render.toString()}</h2>
       <button onClick={()=>setRender(!render)}>Click Me</button>
+      <User render = {render}></User>
     </div>
   );
 }
